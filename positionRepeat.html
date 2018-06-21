@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        .static {
+            position: static;
+            width: 200px;
+            height: 200px;
+            border: 2px solid gray;
+        }
+
+        .relative {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            top: 100px;
+        }
+
+        .absolute1 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(207, 207, 144);
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .absolute2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(90, 172, 187);
+            right: 10px;
+            top: 10px;
+        }
+        .sticky{
+            position: sticky;
+            height: 50px;
+            background-color: rgb(90, 172, 187);
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">Static Position</div>
+    <div class="static">Static Position</div>
+    <div class="static">Static Position</div>
+    <div class="sticky">Sticky div</div>
+    <div class="static">Static Position</div>
+    <div class="static">Static Position</div>
+    <div class="static">Static Position</div>
+    <div class="static">Static Position</div>
+    <div class="static">Static Position</div>
+    <div class="static">Static Position</div>
+    
+    <div class="relative">Relative Position
+        <div class="absolute1">Absolute 1 div</div>
+    </div>
+    <!-- <div class="sticky">Sticky div</div> -->
+    <div class="absolute2">Absolute 2 div</div>
+    <!-- <div class="fixed"></div> -->
+    <!-- <div class="static">Static Position</div>  -->
+</body>
+
+</html>

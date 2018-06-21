@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Combinators</title>
+</head>
+<style>
+     .childSelector  p{
+        background-color: red;
+    }
+
+    .childSelector  > p{
+        background-color: goldenrod;
+    }
+
+   
+ 
+
+    .siblingSelector ~ h6{
+        background-color: palegreen;
+    }
+
+    .siblingSelector + h6{
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="childSelector">
+        <p>This is first demo para</p>
+        <p>This is second demo para</p>
+        <p>This is third demo para</p>
+        <span>
+            <p>This is inside span</p>
+        </span>
+    </div>
+
+    <div class="siblingSelector">
+        <h6>Inside sibling div</h6>
+    </div>
+    <h6>Sibling heading Adj</h6>
+    <h6>Sibling heading</h6>
+    <h6>Sibling heading</h6>
+    <span>
+            <h6>Sibling heading inside span</h6>
+   </span>
+    <h6>Sibling heading</h6>
+</body>
+</html>

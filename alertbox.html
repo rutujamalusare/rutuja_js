@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alert</title>
+</head>
+<body>
+    <button onclick="showAlert()">Click Me AlertBox...!!</button>
+    <button onclick="showConfirm()">Click Me Confirm Box...!!</button>
+    <button onclick="showPrompt()">Click Me Prompt Box...!!</button>
+    <p id="rollno"></p>
+    <script>
+    function showAlert(){
+        alert('Hiii codekul');
+    }
+    function showConfirm(){
+        var confirmMe = window.confirm('Are you sure?');
+        if(confirmMe)
+        {
+            console.log('Operation is confirmed');
+        }
+        else{
+            console.log('Task Discarded');
+        }
+    }
+    function showPrompt(){
+        var promptMe = window.prompt('Roll No.: ', 'Codekul01');
+        console.log(promptMe);
+        if(promptMe == null || promptMe == '')
+        {
+document.getElementById('rollno').innerHTML = 'Please enter value';
+        }
+        else{
+document.getElementById('rollno').innerHTML = promptMe;
+            
+        }
+    }
+    </script>
+</body>
+</html>

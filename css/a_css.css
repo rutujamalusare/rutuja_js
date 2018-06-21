@@ -1,0 +1,16 @@
+h1{
+    background-color: powderblue;
+    text-align: center;
+    /* text-align: left;
+    text-align: right; */
+    text-decoration: overline;
+   /* text-decoration: line-through;
+    text-decoration: underline;*/
+
+    text-transform: lowercase;
+    /*text-transform: uppercase;
+    text-transform: capitalize;*/
+
+    /* letter-spacing: 30px; */
+    word-spacing: 30px;
+}

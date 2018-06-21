@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS FOR LOOP</title>
+</head>
+<body>
+    <p id="numbers"></p>
+    <script>
+ //for loop
+    /*var numbers = ["one", "two", "three", "four", "five"];
+    var num = "";
+    var i;
+    for (i = 0; i < numbers.length; i++) 
+        {
+          num += numbers[i] + "<br>";
+        }*/
+
+//while loop
+     /*var num = "";
+     var i = 0;
+     while (i < 5)
+                 {
+                   num += "<br>" + i;
+                   i++;
+                 }*/
+
+//do while loop
+var num = ""
+var i = 10;
+
+do {
+    num += "<br>" + i;
+    i++;
+}
+while (i < 15);  
+                 
+document.getElementById("numbers").innerHTML = num;    
+        
+    </script>
+</body>
+</html>

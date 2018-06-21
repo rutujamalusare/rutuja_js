@@ -1,0 +1,30 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin:  0px;
+    background-color: blue;
+    width:100px;
+    overflow: hidden;
+}
+ul li{float: left;}
+ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 20px 20px;
+
+}
+ul li:not(.active) a:hover{
+    background-color: #111;
+color: #aaa; 
+}
+ul li.active a{
+background-color: royalblue;
+}
+ul li.right{
+    float: right;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h1>Array Result</h1>
+   <p id="display"></p> 
+<button onclick="displayResult()">Okay</button>
+<script>
+    function displayResult(){
+        var arr = ['a', 'b', 'c'];
+
+        // for(i=0; i<arr.length; i++)
+        // {}
+        document.getElementById('display').innerHTML = arr.length;
+        console.log(arr.length);
+        console.log('Array: ', arr);
+        arr.pop();
+        console.log('Array Pop: ', arr);
+        arr.push("codekul");
+        console.log('Array Push Codekul: ', arr);
+        // shift() unshift()
+        // delete arr[1];
+        // console.log('Array Delete: ', arr);
+        arr[1] = "Kothrud";
+        console.log('Array Insert (Replace): ', arr);
+        arr.splice(1, 0, 'Swargate','Nal-stop');
+        console.log('Array splice (2): ', arr);
+        // arr.concat(["abc", "def"]);
+        var arr2 = arr.slice(2);
+
+        console.log('Array before slice (2): ', arr);
+        console.log('Array after slice (2): ', arr2);
+        // arr.toString()
+//convert array to string with any char
+// var arr = ['b', 'a', 'd', 'c'];
+console.log("Sorted Before:", arr);
+    arr.sort();
+console.log("Sorted After:", arr);
+var arr2 = ['b', 'a', 'd', 'c'];
+console.log("Sorted Reverse Before:", arr2);
+
+arr2.reverse();
+console.log("Sorted Reverse After:", arr2);
+
+// reverse array
+    }
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Clsses</title>
+    <style>
+        p::first-letter {
+            color: red;
+        }
+        p:nth-child(2) {
+            background-color: blue;
+        }
+
+        /* p:first-child {
+            background-color: palegreen;
+        }
+
+        a {
+            display: flex;
+        }
+
+        p:last-child {
+            background-color: palevioletred;
+        } */
+        q:lang(abc){
+            quotes: "~" "%";
+        }
+        p::selection{
+            background-color: orange;
+        }
+        li::before{
+            
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is some  demopara.</p>
+    <p>This is some  <mark>demopara</mark></p>
+        <p>This is some  <mark>demopara</mark></p>
+
+    <p>This is <q lang="abc">quote</q></p>
+    <div>
+        <p>
+            Para begins
+
+            <!-- <h1>First Child</h1>
+            <a href="#">First ink</a>
+            <a href="#">Second link</a>
+            <ul>
+                <li>First List</li>
+            </ul>
+            <a href="#">Third ink</a> -->
+
+        </p>
+        <p>
+            This is demo second para.
+        </p>
+        <p>
+            This is demo third para.
+        </p>
+        <p>
+            This is demo fourth para.
+        </p>
+        <p>
+            This is demo fifth para.
+        </p>
+        <p>
+            This is demo sixth para.
+        </p>
+    </div>
+</body>
+
+</html>
